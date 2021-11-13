@@ -1,0 +1,102 @@
+:root{
+    --brand : #e23e38;
+    --cl-dark: #353535;
+    --ff1 : 'Oswald', sans-serif;
+    --ff2 : 'Open Sans', sans-serif;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+img{
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/* =======================
+    common css ends
+========================= */
+.navbar{
+    background-color: rgba(53, 53, 53, 0.25);
+    position: fixed;
+    top: 30px;
+    left: 0;
+}
+
+.navbar .navbar-brand{
+    background: rgba(241, 241, 241, 0.2);
+    padding: 10px 30px !important;
+    transform: skewX(-35deg);
+}
+
+.navbar .navbar-brand img{
+    transform: skewX(35deg);
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+    line-height: 50px;
+    padding: 0 10px !important;
+    color: #f1f1f1;
+    position: relative;
+    transition: all linear 0.4s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: var(--cl-dark);
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: var(--cl-dark);
+}
+
+.navbar-light .navbar-nav .nav-link::before{
+    content: '';
+    width: 100%;
+    height: 0%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    transition: all linear 0.4s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::before{
+    height: 100%;
+}
+.navbar-light .navbar-nav .active::before{
+    height: 100%;
+}
+
+.navbar-light .navbar-nav .nav-link::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: var(--brand);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all linear 0.4s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after{
+    width: 100%;
+}
+
+.navbar-light .navbar-nav .active::after{
+    width: 100%;
+}
+
+/* =====================
+    navbar css ends
+======================= */
