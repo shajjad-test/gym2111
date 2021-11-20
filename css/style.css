@@ -1,6 +1,7 @@
 :root{
     --brand : #e23e38;
     --cl-dark: #353535;
+    --cl-p: #777777;
     --ff1 : 'Oswald', sans-serif;
     --ff2 : 'Open Sans', sans-serif;
     --over6 : rgba(0, 0, 0, 0.6);
@@ -76,12 +77,14 @@ ul{
     font-size: 60px;
 }
 
-
-
-
-
 /* =======================
     font css ends
+========================= */
+header h3{
+    color: var(--cl-dark);
+}
+/* =======================
+    header css ends
 ========================= */
 .navbar{
     background-color: rgba(53, 53, 53, 0.25);
@@ -194,6 +197,10 @@ ul{
     margin-bottom: 20px !important;
 }
 
+#banner .banner-item .banner-text p{
+    line-height: 18px;
+}
+
 #banner .banner-item .banner-text a{
     margin-top: 30px;
     line-height: 34px;
@@ -258,6 +265,7 @@ ul{
 	top: -23px;
 }
 
+
 #banner .bg1 .banner-text p{
     position: relative;
     padding: 0 55px;
@@ -317,4 +325,41 @@ ul{
 
 /* =====================
     banner css ends
+======================= */
+#about{
+    padding-top: 80px;
+    padding-bottom: 80px;
+} 
+#about .about-video .about-overlay{
+    background: var(--over6);
+}
+
+#about .about-video .about-overlay i{
+    width: 48px;
+    height: 48px;
+    background: var(--brand);
+    color: var(--cl-dark);
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#about .about-detail header img{
+    margin-top: -5px;
+}
+
+#about .about-detail p{
+    color: var(--cl-p);
+    line-height: 24px;
+    padding: 0 55px;
+}
+
+#about .about-detail p:first-of-type{
+    padding-top: 15px;
+    padding-bottom: 35px;
+}
+
+/* =====================
+    about css ends
 ======================= */
