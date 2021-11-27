@@ -17,4 +17,20 @@ $(document).ready(function(){
         slidesToShow: 2,
     });
 
+    //funfact counter
+    $('.counter').counterUp();
+
+    //
+    $('.feedback-slider').slick({
+        arrows: false,
+        slidesToShow: 2,
+    });
+
+    $('.brand-slider').slick({
+        arrows: false,
+        slidesToShow: 5,
+        centerMode: true,
+        centerPadding: '0px',
+    });
+
 });
